@@ -1,0 +1,180 @@
+{
+  "collection": {
+    "info": {
+      "_postman_id": "25acb23e-ddc7-4570-b442-189f4e979761",
+      "name": "Assignment7",
+      "description": "This collection is done to test requests made to the Assignment7 DTS Golang project.",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2023-04-27T15:41:07.000Z",
+      "uid": "15577127-25acb23e-ddc7-4570-b442-189f4e979761"
+    },
+    "item": [
+      {
+        "name": "Create Book",
+        "id": "349569e7-fb6c-4d3f-b3ce-d992f286fb7d",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"title\": \"Jerikho The Sun\",\r\n    \"author\": \"Stygam\",\r\n    \"description\": \"The shine of Jerikho\"\r\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8000/books",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "books"
+            ]
+          },
+          "description": "This request aims to add book items by providing the values ​​\"title\", \"author\", and \"description\""
+        },
+        "response": [],
+        "uid": "15577127-349569e7-fb6c-4d3f-b3ce-d992f286fb7d"
+      },
+      {
+        "name": "Update Book",
+        "id": "666e2579-e081-4332-a49f-ab8ac996578f",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "PUT",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"title\": \"Jerikho The Moon\",\r\n    \"author\": \"Tetax\",\r\n    \"description\": \"Tale of Jerikho Light\"\r\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8000/books/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "books",
+              "1"
+            ]
+          },
+          "description": "This request aims to update book items with \"id\"=1, this request gives new values ​​to \"title\", \"author\", and \"description\""
+        },
+        "response": [],
+        "uid": "15577127-666e2579-e081-4332-a49f-ab8ac996578f"
+      },
+      {
+        "name": "Get Book",
+        "id": "3be40a44-5ed4-4b9f-83d6-9cff7a8fb7a2",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8000/books/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "books",
+              "1"
+            ]
+          },
+          "description": "This request aims to retrieve book items with \"id\"=1"
+        },
+        "response": [],
+        "uid": "15577127-3be40a44-5ed4-4b9f-83d6-9cff7a8fb7a2"
+      },
+      {
+        "name": "Delete Book",
+        "id": "b5966b80-e7ce-408f-97cd-d9777fed2806",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8000/books/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "books",
+              "1"
+            ]
+          },
+          "description": "This request aims to delete book items with \"id\"=1"
+        },
+        "response": [],
+        "uid": "15577127-b5966b80-e7ce-408f-97cd-d9777fed2806"
+      },
+      {
+        "name": "Get Books",
+        "id": "e78320fa-c305-41c3-be7a-a9602184f6f2",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8000/books/all",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "books",
+              "all"
+            ]
+          },
+          "description": "This request aims to retrieve all book items"
+        },
+        "response": [],
+        "uid": "15577127-e78320fa-c305-41c3-be7a-a9602184f6f2"
+      },
+      {
+        "name": "Create Book 2",
+        "id": "72333a3a-e393-4864-950b-292a913ebfac",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"title\": \"Jerikho The Star\",\r\n    \"author\": \"Duvessa\",\r\n    \"description\": \"Shoot of Jerikho\"\r\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8000/books",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "books"
+            ]
+          },
+          "description": "This request has the same purpose as the Create Book request"
+        },
+        "response": [],
+        "uid": "15577127-72333a3a-e393-4864-950b-292a913ebfac"
+      }
+    ]
+  }
+}
